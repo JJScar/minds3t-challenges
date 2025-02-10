@@ -6,16 +6,16 @@ pragma solidity 0.8.20;
 //////////////////////////////////////////////////////////////////////
 
 import {Test, Vm} from "@forge-std/Test.sol"; // @note side-quest - go research remappings for the .toml file
-import {GettingWarm} from "../../src/Challenge0-GettingWarm/GettingWarm.sol";
+import {GettingWarmDev} from "../../src/Challenge0-GettingWarm/GettingWarmDev.sol";
 
 contract GettingWarmTest is Test {
-    GettingWarm challengeContract;
+    GettingWarmDev challengeContract;
     string newMessage;
     string originalMessage;
 
     // => DO NOT TOUCH <= //
     function setUp() external {
-        challengeContract = new GettingWarm();
+        challengeContract = new GettingWarmDev();
         newMessage = challengeContract.getMessage();
     }
 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.20;
 
-contract GettingWarm {
+contract GettingWarmDev {
     // => Events <= //
     event MessageUpdated(string indexed newMesasge);
 
@@ -14,7 +14,6 @@ contract GettingWarm {
 
     function setMessage(string memory _newMessage) external { // @note side-quest: go research why there is the `memory` keyword there
         // TODO: add the logic to set a new message.
-        s_message = _newMessage;
         emit MessageUpdated(s_message);
     }
 
