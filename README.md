@@ -1,66 +1,52 @@
-## Foundry
+# 🛠 Minds3t Challenges
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 💻 Welcome to the Minds3t Challenge Repository
 
-Foundry consists of:
+This repository contains all the challenges for Minds3t, a cyberpunk-style Web3 learning experience. Your mission? Complete development tasks, exploit vulnerabilities, and prove your skills.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+💡 Everything runs on Foundry—a powerful smart contract development and testing framework. If you haven’t set it up yet, follow the instructions below.
 
-## Documentation
+## 🚀 Quickstart
 
-https://book.getfoundry.sh/
+### 📌 1️⃣ Install Foundry
+You need Foundry to compile, test, and run the challenges. If you don’t have it yet, install it going to the [foundry book](https://book.getfoundry.sh/getting-started/installation) docs and follow their instructions. 
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
+### 📌 2️⃣ Clone This Repository
+Once Foundry is installed, clone this repository:
+```bash
+git clone https://github.com/YOUR_USERNAME/Minds3t-Challenges.git
+cd Minds3t-Challenges
 ```
 
-### Test
-
-```shell
-$ forge test
+### 📌 3️⃣ Install Dependencies
+Use the Makefile to get all necessary dependencies:
+```bash
+make build
 ```
 
-### Format
-
-```shell
-$ forge fmt
+## 📜 Challenge Structure
+Each challenge follows a consistent format inside the /src/ directory and the coding solution also in the test/ directory:
+```
+/src/
+    ├── challenge1/
+    │   ├── Contract.sol        # The dev task contract 
+    │   ├── Exploit.sol         # The hack task contract 
+    │   ├── README.md           # Challenge instructions
+/test/
+    ├── challenge1/
+    |   ├── Challenge1.t.sol    # The Forge test file
 ```
 
-### Gas Snapshots
+## 🧪 Running Challenges
+To test if your solution is correct, navigate to a challenge folder, and follow the README.md instructions. 
 
-```shell
-$ forge snapshot
-```
+## 🌎 Contribute & Improve
+If you find bugs or have suggestions, feel free to open an issue or a pull request. We’re always looking to make Minds3t better.
 
-### Anvil
+## 📢 Stay Connected
+🔗 Website: [Minds3t.io]()
+📢 X: [@JJS_OnChain](https://x.com/JJS_OnChain)
 
-```shell
-$ anvil
-```
 
-### Deploy
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
